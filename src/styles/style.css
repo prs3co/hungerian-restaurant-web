@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Righteous&display=swap');
+
+:root {
+  --primary: #E0144C;
+  --font: #292929;
+  --bg-primary: #FFFAE7;
+  --bg-secondary: #FAD4D4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Nunito', sans-serif;
+  color: var(--font);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  height: 4.875rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1.5rem;
+  box-shadow: 0px 17px 27px -3px rgba(0,0,0,0.1);
+}
+
+.header-brand {
+  font-size: 1.5rem;
+  font-family: 'Righteous', cursive;
+  color: #E0144C;
+}
+
+.app-bar .nav-menu {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.nav-menu button {
+  border: none;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.nav-menu button:hover {
+  background-color: var(--bg-secondary);
+}
+
+.app-bar .nav-bar ul {
+  display: flex;
+}
+
+.app-bar .nav-bar ul li {
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.8rem 0;
+}
+
+.app-bar .nav-bar ul li a {
+  padding: 0.8rem 0.8rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 0.5rem;
+}
+
+.app-bar .nav-bar ul li a:hover {
+  background-color: var(--bg-secondary);
+
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  /* background-image: url("../public/images/heros/hero-image_4.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* .jumbotron-inner {
+  margin: 0 auto;
+  max-width: 800px;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+} */
+
+.jumbotron picture {
+  position: relative;
+  width: 100%;
+}
+
+.jumbotron picture img {
+  width: 100%;
+  object-fit: cover;
+  height: 380px;
+}
+.jumbotron__text {
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  max-width: 800px;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+img {
+  display: block;
+}
+
+.content {
+  padding: 1.6rem;
+}
+
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+.content__heading {
+  text-align: center;
+}
+
+.restaurant-item {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.restaurant-item__img {
+  position: relative;
+  border-radius: 0.5rem 0.5rem 0 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 14rem;
+  width: 100%;
+  background-size: cover;
+}
+
+.restaurant-item__thumbnail {
+  max-height: 13.3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant-item__label {
+  color: var(--bg-primary);
+  position: absolute;
+  top: 12px;
+  background-color: var(--primary);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 8px;
+}
+
+.restaurant-item__content {
+  width: 100%;
+  height: 12rem;
+  padding: 1.3rem 1.3rem;
+}
+
+.restaurant-item__rating {
+  margin-bottom: 0.4rem;
+}
+
+.restaurant-item__name {
+  margin-bottom: 0.4rem;
+  min-width: 2.75rem;
+}
+
+.restaurant-item__name a {
+  display: inline-flex;
+  height: 2.75rem;
+  text-decoration: none;
+  color: var(--font);
+  align-items: center;
+  min-width: 2.75rem;
+}
+
+.restaurant-item__name a:hover {
+  color: var(--primary);
+}
+
+.restaurant-item__description {
+  height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Detail */
+.restaurant {
+  display: flex;
+  padding: 2em;
+  justify-content: center;
+}
+
+.restaurant-detail {
+  width: 42rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 15px 5px rgb(0 0 0 / 10%);
+  overflow: hidden;
+}
+
+.restaurant-detail__thumbnail {
+  max-height: 27.125rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.restaurant-detail__name {
+  margin-bottom: 0.4rem;
+  min-width: 2.75rem;
+}
+
+.restaurant-detail__name a {
+  display: inline-flex;
+  height: 2.75rem;
+  text-decoration: none;
+  color: var(--font);
+  align-items: center;
+  min-width: 2.75rem;
+}
+
+.restaurant-detail__name a:hover {
+  color: var(--primary);
+}
+
+.restaurant-detail__description {
+  height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1.4rem;
+}
+
+.restaurant-detail__img {
+  position: relative;
+  border-radius: 0.5rem 0.5rem 0 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 27.125rem;
+  width: 100%;
+  background-size: cover;
+}
+
+.restaurant-detail__label {
+  color: var(--bg-primary);
+  position: absolute;
+  top: 12px;
+  background-color: var(--primary);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 8px;
+}
+
+.restaurant-detail__content {
+  width: 100%;
+  padding: 1.3rem 1.3rem;
+}
+
+.restaurant-detail__rating {
+  margin-bottom: 0.4rem;
+}
+
+.restaurant-detail__menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+  text-align: center;
+}
+
+
+.restaurant-detail__menu-item {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.restaurant-detail__food {
+  width: 50%;
+}
+
+.restaurant-detail__drink {
+  width: 50%;
+}
+
+.menu-list {
+  text-align: left;
+  display: list-item;
+  list-style-position: inside;
+}
+
+.restaurant-detail__review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+  gap: 1rem;
+}
+
+.restaurant-detail__review h2{
+  text-align: center;
+}
+
+.restaurant-detail__review-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.review-item {
+  display: flex;
+  box-shadow: 0px 0px 15px -4px rgb(0 0 0 / 10%);
+  padding: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.review-item__name {
+  font-weight: 700;
+}
+
+.review-item__date {
+  font-weight: 400;
+}
+
+.restaurant__not__found {
+  display: flex;
+}
+
+/*
+  Like
+*/
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+/* loader */
+#spinner:not([hidden]) {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 100%;
+  height: 88vh;
+}
+
+#spinner::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Footer */
+
+.footer {
+  padding: 1.3rem;
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.footer h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.footer-list {
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-item {
+  display: block;
+}
+
+.footer-item a {
+  display: inline-flex;
+  height: 2.75rem;
+  text-decoration: none;
+  color: var(--font);
+  align-items: center;
+  min-width: 2.75rem;
+  justify-content: center;
+}
+
+.footer-item a:hover {
+  color: var(--primary);
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: var(--primary);
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}

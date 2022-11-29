@@ -1,0 +1,92 @@
+@media screen and (max-width: 659px) {
+  .nav-list {
+    z-index: 10;
+    background-color: #fff;
+    width: 50%;
+    position: absolute;
+    -webkit-transform: translate(-564px, 0);
+    transform: translate(-564px, 0);
+    transition: transform 0.3s ease;
+    top: 62px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .app-bar .nav-bar {
+    position: absolute;
+    top: 78px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    padding: 8px;
+    background-color: white;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  .app-bar .nav-bar.open {
+    left: 0;
+    width: 100%;
+  }
+
+  .app-bar .nav-bar ul {
+    flex-direction: column
+  }
+
+  .app-bar .nav-bar ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .app-bar .nav-bar ul li a {
+    display: block;
+  }
+
+  .nav-item a:hover {
+    border-radius: 0;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .app-bar .nav-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    font-size: 1.2rem;
+  }
+  .jumbotron-inner {
+    font-size: 1rem;
+  }
+
+  .header-brand {
+    font-size: 1rem;
+  }
+
+  .restaurant-detail__content {
+    font-size: smaller;
+  }
+
+  .restaurant-detail__description {
+    height: 4.4rem;
+  }
+
+  .restaurant-detail__menu {
+    gap: 0.5rem;
+  }
+
+  .restaurant-detail__menu-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4px;
+  }
+  
+}
