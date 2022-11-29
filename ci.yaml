@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    strategy:
+    strategy:a
       matrix:
         node-version: [14.x]
 
