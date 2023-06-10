@@ -16,7 +16,7 @@ const Favorite = {
     }
     return `
       <div class="content">
-        <h1 class="content__heading">Your Liked Movie</h1>
+        <h1 class="content__heading">Your Liked Restaurants</h1>
         <div id="restaurants" class="restaurants">
           <div class="restaurant__not__found">There are no restaurants to display</div>
         </div>
