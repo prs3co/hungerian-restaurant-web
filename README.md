@@ -11,5 +11,5 @@ Anda bisa melihat demo website ke [website Hungerian](https://main--silly-douhua
 
 ## Screenshot Tampilan Aplikasi
 <p align="center">
-    <img src="src/assets/img/Home.png" alt="Program">
+    <img src="src/public/images/hungerian.png" alt="Program">
 </p>
