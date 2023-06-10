@@ -7,7 +7,7 @@ const Favorite = {
     if (restaurants.length) {
       return `
       <div class="content">
-        <h1 class="content__heading">Your Liked Movie</h1>
+        <h1 class="content__heading">Your Liked Restaurants</h1>
         <div id="restaurants" class="restaurants">
 
         </div>
